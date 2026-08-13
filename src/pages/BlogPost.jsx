@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogPosts';
-import Navbar from '../layout/navbar';
+import Navbar from '../layout/Navbar';
 
 
 export function BlogPost() {
