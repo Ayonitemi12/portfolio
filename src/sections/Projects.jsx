@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import DownloadCV from "../components/DownloadCV";
-// import FadeIn from "../components/FadeIn";
+import FadeIn from "../components/FadeIn";
 
 const projects = [
   {
@@ -67,7 +67,7 @@ function Projects() {
         </div>
 
         {/* Projects Grid */}
-        {/* <FadeIn> */}
+        <FadeIn>
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, idx) => (
             <div
@@ -141,7 +141,7 @@ function Projects() {
             <ArrowUpRight className="w-5 h-5" />
           </DownloadCV>
         </div>
-        {/* </FadeIn> */}
+        </FadeIn>
       </div>
     </section>
     )

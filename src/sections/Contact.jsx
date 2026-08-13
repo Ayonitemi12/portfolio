@@ -9,7 +9,7 @@ import {
 import Button from "../components/Button";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-// import FadeIn from "../components/FadeIn";
+import FadeIn from "../components/FadeIn";
 
 const contactInfo = [
   {
@@ -111,7 +111,7 @@ function Contact() {
             and let's discuss how we can work together.
           </p>
         </div>
-{/* <FadeIn> */}
+<FadeIn>
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
           <div className="glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300 bg-white dark:bg-gray-800">
             <form className="space-y-6" onSubmit={handleSubmit}>
@@ -250,7 +250,7 @@ function Contact() {
             </div>
           </div>
         </div>
-        {/* </FadeIn> */}
+        </FadeIn>
       </div>
     </section>
     )

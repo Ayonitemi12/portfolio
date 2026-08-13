@@ -41,7 +41,7 @@ function Navbar() {
         : 'bg-transparent'
       }
     `}>
-      <div className="container mx-auto px-auto py-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <RouterLink to="/" className="text-2xl font-bold text-gray-900 dark:text-white hover:text-primary">
           Ayodeji Ogunleye<span className="text-purple-500"></span>

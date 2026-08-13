@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { certificates } from '../data/certificates';
-// import FadeIn from '../components/FadeIn';
+import FadeIn from '../components/FadeIn';
 
 export function Certificates() {
    const [activeFilter, setActiveFilter] = useState("all");
@@ -64,7 +64,7 @@ function CertificateCard({ cert }) {
   const [setIsHovered] = useState(false);
 
   return (
-    // <FadeIn>
+    <FadeIn>
     <div 
       className="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
       onMouseEnter={() => setIsHovered(true)}
@@ -115,7 +115,7 @@ function CertificateCard({ cert }) {
         </p>
       </div>
     </div>
-    // </FadeIn>
+    </FadeIn>
   );
 }
 

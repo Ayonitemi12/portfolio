@@ -33,7 +33,7 @@ const skills = [
 
 function Hero() {
     return (
-       <section className="relative min-h-screen flex items-center overflow-hidden bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+       <section className="relative min-h-screen flex items-center justify-center pt-20 md:pt-24 overflow-hidden bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
       {/* Bg */}
       <div className="absolute inset-0">
         <img
@@ -50,7 +50,7 @@ function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto my-auto px-auto pt-30 pb-15 relative z-10">
+      <div className="container mx-auto my-auto px-4 md:px-6 pt-20 md:pt-30 pb-10 md:pb-15 relative z-10">
         <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-20 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-15">
@@ -63,7 +63,7 @@ function Hero() {
 
             {/* Headline */}
             <div className="space-y-6">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
                 Crafting <span className="text-primary glow-text">digital</span>
                 <br />
                 experiences with
