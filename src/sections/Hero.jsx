@@ -50,19 +50,19 @@ function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto my-2 px-10 pt-30 pb-20 relative z-10">
-        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-10 items-center">
+      <div className="container mx-auto my-auto px-auto pt-30 pb-15 relative z-10">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-20 items-center">
           {/* Left Column - Text Content */}
-          <div className="space-y-5">
+          <div className="space-y-15">
             <div className="animate-fade-in">
-              <span className="inline-flex items-center gap-3 px-3 py-1 rounded-full glass text-sm text-primary">
+              <span className="inline-flex items-center gap-4 px-3 py-3 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
                 Software Engineer • React Specialist
               </span>
             </div>
 
             {/* Headline */}
-            <div className="space-y-4">
+            <div className="space-y-6">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
                 Crafting <span className="text-primary glow-text">digital</span>
                 <br />
@@ -80,7 +80,7 @@ function Hero() {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+            <div className="flex flex-wrap gap-5 animate-fade-in animation-delay-300">
              <a href="#contact"> <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
@@ -150,8 +150,8 @@ function Hero() {
         </div>
 
         {/* Skills Section */}
-        <div className="mt-20 animate-fade-in animation-delay-600">
-          <p className="text-sm text-muted-foreground mb-6 text-center">
+        <div className="mt-8 animate-fade-in animation-delay-600">
+          <p className="text-sm text-muted-foreground mb-5 text-center">
             Technologies I work with
           </p>
           <div className="relative overflow-hidden">

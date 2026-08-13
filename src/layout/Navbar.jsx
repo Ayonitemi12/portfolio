@@ -11,8 +11,9 @@ const navLinks =  [
     { id: "about", label: "About", path:'/'},
     { id: "projects", label: "Projects", path:'/'},
     { id: "experience", label: "Experience", path:'/'},
-    { id: "certificates", label: "Certificates", path:'/'},
-    { id: "testimonials", label: "Testimonial", path:'/'},
+    // { id: "certificates", label: "Certificates", path:'/'},
+    // { id: "testimonials", label: "Testimonial", path:'/'},
+    // { id: "contact", label: "contact", path:'/'},
 
 ] 
 
@@ -40,7 +41,7 @@ function Navbar() {
         : 'bg-transparent'
       }
     `}>
-      <div className="container mx-auto px-10 py-2 flex justify-between items-center">
+      <div className="container mx-auto px-auto py-4 flex justify-between items-center">
         {/* Logo */}
         <RouterLink to="/" className="text-2xl font-bold text-gray-900 dark:text-white hover:text-primary">
           Ayodeji Ogunleye<span className="text-purple-500"></span>
@@ -80,7 +81,7 @@ function Navbar() {
           </li>
         </ul>
              {/* CTA Button */}
-             <div className="hidden md:block mx-4">
+             <div className="hidden sm:block mx-4">
                    <a href="#contact"> <Button size="sm">Contact Me</Button></a>
              </div>
               {/* Mobile Menu Button */}
