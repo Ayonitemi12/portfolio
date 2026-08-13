@@ -1,6 +1,6 @@
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { useState } from "react";
-import FadeIn from "../components/FadeIn";
+// import FadeIn from "../components/FadeIn";
 
 const testimonials = [
   {
@@ -86,7 +86,7 @@ function Testimonial() {
             </span>
           </h2>
         </div>
-<FadeIn>
+{/* <FadeIn> */}
         {/* Testimonial Carousel */}
         <div className="max-w-4xl mx-auto">
           <div className="relative">
@@ -148,7 +148,7 @@ function Testimonial() {
             </div>
           </div>
         </div>
-        </FadeIn>
+        {/* </FadeIn> */}
       </div>
     </section>
     )

@@ -6,15 +6,15 @@ export function Skills() {
   const sectionRef = useRef(null);
 
   const skills = [
-    { name: 'React js', level: 80, icon: '⚛️' },
-    { name: 'JavaScript', level: 75, icon: '📜' },
-    { name: 'Node Js', level: 75, icon: '🎯' },
-    { name: 'HTML & CSS', level: 88, icon: '🌐' },
-    { name: 'Graphic Design', level: 75, icon: '🖌️' },
-    { name: 'Tailwind CSS', level: 70, icon: '🎨' },
-    { name: 'Excel', level: 70, icon: '📜' },
-    { name: 'SQL', level: 55, icon: '🖌️' },
-    { name: 'Python', level: 60, icon: '🌐' },
+    { name: 'Web Development', level: 80, icon: '⚛️' },
+    { name: 'Graphic Design', level: 75, icon: '📜' },
+    { name: 'Data Analysis', level: 75, icon: '🎯' },
+    { name: 'Video Editing', level: 50, icon: '🌐' },
+    // { name: 'Graphic Design', level: 75, icon: '🖌️' },
+    // { name: 'Tailwind CSS', level: 70, icon: '🎨' },
+    // { name: 'Excel', level: 70, icon: '📜' },
+    // { name: 'SQL', level: 55, icon: '🖌️' },
+    // { name: 'Python', level: 60, icon: '🌐' },
   ];
 
   useEffect(() => {
@@ -35,16 +35,16 @@ export function Skills() {
   }, []);
 
   return (
-    <section id="skills" className="py-16 px-4 bg-white dark:bg-gray-900">
+    <section id="skills" className="py-10 px-4 bg-white dark:bg-gray-900">
       <div className="container mx-auto max-w-3xl" ref={sectionRef}>
-        <FadeIn>
+        {/* <FadeIn> */}
           <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-4">
             My <span className="text-purple-500">Skills</span>
           </h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-12">
             Technologies and tools I work with
           </p>
-        </FadeIn>
+        {/* </FadeIn> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 space-y-6">
           {skills.map((skill, index) => (
@@ -66,7 +66,7 @@ export function Skills() {
                   />
                 </div>
               </div>
-            </FadeIn>
+            // </FadeIn>
           ))}
         </div>
       </div>

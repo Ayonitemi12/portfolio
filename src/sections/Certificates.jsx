@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { certificates } from '../data/certificates';
-import FadeIn from '../components/FadeIn';
+// import FadeIn from '../components/FadeIn';
 
 export function Certificates() {
    const [activeFilter, setActiveFilter] = useState("all");
@@ -14,7 +14,7 @@ export function Certificates() {
   return (
     <section id="certificates" className="py-16 px-4 bg-gray-50 dark:bg-gray-800/50 transition-colors duration-300">
       <div className="container mx-auto max-w-6xl">
-        <FadeIn>
+        {/* <FadeIn> */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900 dark:text-white">
           My <span className="bg-linear-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">Credentials</span>
         </h2>
@@ -53,7 +53,7 @@ export function Certificates() {
             No certificates found in this category.
           </p>
         )}
-        </FadeIn>
+        {/* </FadeIn> */}
       </div>
     </section>
   );
@@ -64,7 +64,7 @@ function CertificateCard({ cert }) {
   const [setIsHovered] = useState(false);
 
   return (
-    <FadeIn>
+    // <FadeIn>
     <div 
       className="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
       onMouseEnter={() => setIsHovered(true)}
@@ -115,7 +115,7 @@ function CertificateCard({ cert }) {
         </p>
       </div>
     </div>
-    </FadeIn>
+    // </FadeIn>
   );
 }
 

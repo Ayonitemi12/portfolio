@@ -1,5 +1,5 @@
 import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
-import FadeIn from "../components/FadeIn";
+// import FadeIn from "../components/FadeIn";
 
 
 const highlights = [
@@ -33,7 +33,7 @@ function About() {
     return (
     <section id="about" className="py-32 relative overflow-hidden bg-white dark:bg-gray-900 text-gray-950 dark:text-white transition-colors duration-300">
       <div className="container mx-auto px-6 relative z-10 ">
-        <FadeIn>
+        {/* <FadeIn> */}
         <div className="grid lg:grid-cols-2 gap-16 items-center ">
           {/* Left Column */}
           <div className="space-y-8">
@@ -100,7 +100,7 @@ function About() {
             ))}
           </div>
         </div>
-        </FadeIn>
+        {/* </FadeIn> */}
       </div>
     </section>
     )

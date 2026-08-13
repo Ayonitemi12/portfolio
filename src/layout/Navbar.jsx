@@ -40,14 +40,14 @@ function Navbar() {
         : 'bg-transparent'
       }
     `}>
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div className="container mx-auto px-10 py-2 flex justify-between items-center">
         {/* Logo */}
-        <RouterLink to="/" className="text-4xl font-bold text-gray-900 dark:text-white hover:text-primary">
+        <RouterLink to="/" className="text-2xl font-bold text-gray-900 dark:text-white hover:text-primary">
           Ayodeji Ogunleye<span className="text-purple-500"></span>
         </RouterLink>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-8 items-center">
+        <ul className="hidden md:flex gap-7 items-center">
           {/* Section Links - only show on home page */}
           {!isBlogPage && navLinks.map((link)=> (
             <li key={link.id}>
@@ -80,7 +80,7 @@ function Navbar() {
           </li>
         </ul>
              {/* CTA Button */}
-             <div className="hidden md:block ">
+             <div className="hidden md:block mx-4">
                    <a href="#contact"> <Button size="sm">Contact Me</Button></a>
              </div>
               {/* Mobile Menu Button */}
